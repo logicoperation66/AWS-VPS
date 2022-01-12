@@ -1,0 +1,1 @@
+Rozszerzyć plik base.html strony głównej
