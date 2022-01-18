@@ -1,1 +1,6 @@
 Rozszerzyć plik base.html strony głównej
+
+paczki:
+django
+bootstrap
+pillow

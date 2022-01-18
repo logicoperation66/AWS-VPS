@@ -5,4 +5,8 @@ from .models import Products
 # Create your views here.
 
 def index(request):
-    return render(request, 'shop/base.html')
+    #Strona główna aplikacji AWSVPS
+    return render(request, 'index.html')
+
+def about(request):
+    return render(request, 'about.html')
