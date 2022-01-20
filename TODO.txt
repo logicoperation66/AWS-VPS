@@ -1,6 +1,19 @@
-Rozszerzyć plik base.html strony głównej
+Zainstalowane paczki i ich wersje:
 
-paczki:
-django
-bootstrap
-pillow
+Package           Version
+----------------- -------
+asgiref           3.4.1
+beautifulsoup4    4.10.0
+bootstrap4        0.1.0 -- Niepotrzebne
+Django            4.0.1
+django-bootstrap4 21.2
+networkx          2.6.3
+Pillow            9.0.0
+soupsieve         2.3.1
+sqlparse          0.4.2
+tzdata            2021.5
+
+
+TODO
+
+    -Dodać przekierowanie panelu użyszkodnika do zalogowania z przyciskiem "Jeśli nie masz konta to zarejestruj się"

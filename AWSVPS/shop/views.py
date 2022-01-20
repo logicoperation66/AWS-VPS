@@ -9,4 +9,13 @@ def index(request):
     return render(request, 'index.html')
 
 def about(request):
+    #Strona 'O nas'
     return render(request, 'about.html')
+
+def docs(request):
+    #Strona z dokumentacją
+    return render(request, 'docs.html')
+
+def userpanel(request):
+    #Strona panel użyszkodnika
+    return render(request, 'userpanel.html')

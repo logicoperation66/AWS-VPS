@@ -8,5 +8,9 @@ urlpatterns = [
     #Strona główna
     path('', views.index, name='index'),
     #Strona 'O nas"
-    path('about/', views.about, name='about')
+    path('about/', views.about, name='about'),
+    #Dokumentacja
+    path('docs/', views.docs, name='docs'),
+    #Panel sterowania
+    path('userpanel', views.userpanel, name='userpanel'),
 ]
