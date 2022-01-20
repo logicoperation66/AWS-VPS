@@ -1,1 +1,40 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Serwery dla developerów</h1>
+            <p1 class="lead">Wybierz która konfiguracja odpowiada twoim wymaganiom.</p1>
+        </div>
+    </div>
+{% endblock page_header %}
+{% block content %}
+<div class="card-deck">
+    <div class="card text-auto bg-light" style="width: 18rem;">
+      <img class="card-img-top" src="{% static 'shop/Cloud-Server-Transparent.png'%}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">VPS 1.0</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Wybieram</a>
+      </div>
+    </div>
+    <div class="card text-auto bg-secondary" style="width: 18rem;">
+      <img class="card-img-top" src="{% static 'shop/Cloud-Server-Transparent.png'%}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">VPS 2.0</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Wybieram</a>
+      </div>
+    </div>
+    <div class="card text-auto bg-dark" style="width: 18rem;">
+      <img class="card-img-top" src="{% static 'shop/Cloud-Server-Transparent.png'%}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">VPS PRO</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Wybieram</a>
+      </div>
+    </div>
+</div>
+{% endblock content %}
+
