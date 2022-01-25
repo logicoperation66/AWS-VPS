@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block title %}AWS-VPS tani VPS{% endblock %}
 {% block page_header %}
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -10,31 +11,60 @@
     </div>
 {% endblock page_header %}
 {% block content %}
-<div class="card-deck">
-    <div class="card text-auto bg-light" style="width: 18rem;">
-      <img class="card-img-top" src="{% static 'shop/Cloud-Server-Transparent.png'%}" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">VPS 1.0</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Wybieram</a>
-      </div>
-    </div>
-    <div class="card text-auto bg-secondary" style="width: 18rem;">
-      <img class="card-img-top" src="{% static 'shop/Cloud-Server-Transparent.png'%}" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">VPS 2.0</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Wybieram</a>
-      </div>
-    </div>
-    <div class="card text-light bg-dark" style="width: 18rem;">
-      <img class="card-img-top" src="{% static 'shop/Cloud-Server-Transparent.png'%}" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">VPS PRO</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Wybieram</a>
-      </div>
-    </div>
-</div>
+    {% if user.is_authenticated %}
+        <div class="card-deck">
+            <div class="card text-auto bg-light" style="width: 18rem;">
+              <img class="card-img-top" src="{% static 'shop/Cloud-Server-Transparent.png'%}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">VPS 1.0</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a class="btn btn-primary" href="{% url 'shop:vps1'%}">Wybieram</a>
+              </div>
+            </div>
+            <div class="card text-auto bg-secondary" style="width: 18rem;">
+              <img class="card-img-top" src="{% static 'shop/Cloud-Server-Transparent.png'%}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">VPS 2.0</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="{% url 'shop:vps2'%}" class="btn btn-primary">Wybieram</a>
+              </div>
+            </div>
+            <div class="card text-light bg-dark" style="width: 18rem;">
+              <img class="card-img-top" src="{% static 'shop/Cloud-Server-Transparent.png'%}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">VPS PRO</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="{% url 'shop:vpspro'%}" class="btn btn-primary">Wybieram</a>
+              </div>
+            </div>
+        </div>
+    {% else %}
+        <div class="card-deck">
+            <div class="card text-auto bg-light" style="width: 18rem;">
+              <img class="card-img-top" src="{% static 'shop/Cloud-Server-Transparent.png'%}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">VPS 1.0</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a class="btn btn-primary" href="{% url 'account:login'%}">Wybieram</a>
+              </div>
+            </div>
+            <div class="card text-auto bg-secondary" style="width: 18rem;">
+              <img class="card-img-top" src="{% static 'shop/Cloud-Server-Transparent.png'%}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">VPS 2.0</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="{% url 'account:login'%}" class="btn btn-primary">Wybieram</a>
+              </div>
+            </div>
+            <div class="card text-light bg-dark" style="width: 18rem;">
+              <img class="card-img-top" src="{% static 'shop/Cloud-Server-Transparent.png'%}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">VPS PRO</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="{% url 'account:login'%}" class="btn btn-primary">Wybieram</a>
+              </div>
+            </div>
+        </div>
+    {% endif %}
 {% endblock content %}
 

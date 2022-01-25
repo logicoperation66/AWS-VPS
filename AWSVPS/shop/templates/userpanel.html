@@ -1,2 +1,14 @@
 {% extends 'base.html' %}
 
+{% block page_header %}
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Panel użytkownika</h1>
+            <p1 class="lead">Znajdziesz tu wszystkie istotne informacje dotyczące twojego konta i twoich serwerow.</p1>
+        </div>
+    </div>
+{% endblock page_header %}
+{% block content %}
+    <a href="{% url 'account:logout' %}" class="btn btn-primary">Wyloguj</a>
+{% endblock content %}
+

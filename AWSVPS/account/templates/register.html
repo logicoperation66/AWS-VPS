@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block title %}Rejestracja{% endblock %}
+
+{% block content %}
+
+        <form method="post" action="{% url 'account:register' %}" class="form">
+                {% csrf_token %}
+                {% bootstrap_form user_form %}
+                {% buttons %}
+                        <button name="submit" class="btn btn-primary">Rejestruj</button>
+                {% endbuttons %}
+
+                <input type="hidden" name="next" value="{% url 'shop:userpanel' %}"/>
+        </form>
+{% endblock content %}

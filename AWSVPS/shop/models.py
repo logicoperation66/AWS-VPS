@@ -8,7 +8,6 @@ VERSION = (
 
 class Products(models.Model):
     name = models.CharField(max_length=200, db_index=True)
-    #slug = models.SlugField(max_length=200, db_index=True, unique=True)
     image = models.ImageField(blank=True)
     description = models.TextField(blank=True)
     ami = models.CharField(max_length=200)

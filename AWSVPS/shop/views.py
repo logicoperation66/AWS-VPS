@@ -19,3 +19,15 @@ def docs(request):
 def userpanel(request):
     #Strona panel użyszkodnika
     return render(request, 'userpanel.html')
+
+def vps1(request):
+    #Strona VPS 1.0
+    return render(request, 'vps1.html')
+
+def vps2(request):
+    #Strona VPS 2.0
+    return render(request, 'vps2.html')
+
+def vpspro(request):
+    #Strona VPS PRO
+    return render(request, 'vpspro.html')

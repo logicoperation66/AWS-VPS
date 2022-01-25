@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-956y3ix@%n!c(%gfm#4izsjcl#@d=v)!c8ah(viikd6_546vme
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     #Moje aplikacje
     'shop',
+    'account.apps.AccountConfig',
 
     #Aplikacje innych firm
     'bootstrap4',
@@ -114,13 +115,15 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pl'
 
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_TZ = True
+Use_L1ON = True
+
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)

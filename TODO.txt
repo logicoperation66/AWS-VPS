@@ -1,19 +1,11 @@
-Zainstalowane paczki i ich wersje:
-
-Package           Version
------------------ -------
-asgiref           3.4.1
-beautifulsoup4    4.10.0
-bootstrap4        0.1.0 -- Niepotrzebne
-Django            4.0.1
-django-bootstrap4 21.2
-networkx          2.6.3
-Pillow            9.0.0
-soupsieve         2.3.1
-sqlparse          0.4.2
-tzdata            2021.5
-
 
 TODO
-
-    -Dodać przekierowanie panelu użyszkodnika do zalogowania z przyciskiem "Jeśli nie masz konta to zarejestruj się"
+    !-Zrobić powrót do poprzedniej strony po zalogowaniu się. Teraz jak sie zaloguje po kliknieciu w wybór vpsa to
+    wywala do userpanelu. A faktycznie powinno zostać w wybranym vps. Rozwiązanie na Stacku
+    "https://stackoverflow.com/questions/806835/django-redirect-to-previous-page-after-login"
+    !-Dodać wybór konfiguracji każdego z VPS
+    -Podpiąc baze danych
+    -Zkonteneryzować aplikację i uruchomić na testowym środowisku
+    -Zaaplikować UI/UX ? Automatyzację commitowania zmian poprzez githuba.
+    Na dwa tygodnie zapomnieć o JavaScripcie a potem ruszamy z tematem
+    -Dodać tematyczny block title do każdej ze stron

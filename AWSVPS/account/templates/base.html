@@ -24,17 +24,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'shop:docs'%}">Dokumentacja</a></li>
                     </ul>
-                    {% if user.is_authenticated %}
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'shop:userpanel'%}">Panel użyszkodnika</a></li>
-                        </ul>
-                    {% else %}
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'account:login'%}">Panel użyszkodnika</a></li>
-                        </ul>
-                    {% endif %}
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'shop:userpanel'%}">Panel użyszkodnika</a></li>
+                    </ul>
                 </div>
             </nav>
             <main role="main" >
