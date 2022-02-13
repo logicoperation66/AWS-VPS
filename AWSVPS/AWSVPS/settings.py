@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-956y3ix@%n!c(%gfm#4izsjcl#@d=v)!c8ah(viikd6_546vme
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -87,8 +87,12 @@ WSGI_APPLICATION = 'AWSVPS.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'awsvpsdb',
+        'USER': 'admin',
+        'PASSWORD': 'cl9s8Zm4',
+        'HOST': 'awsvpsdb.cmrwutxibrqt.eu-west-1.rds.amazonaws.com',
+        'PORT': '3306',
     }
 }
 
@@ -142,6 +146,10 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#Sciezki dla zmiennych ImageField
-# MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.core.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.request",
+)

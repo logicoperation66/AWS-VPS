@@ -1,9 +1,8 @@
 
 TODO
-    !-Zrobić powrót do poprzedniej strony po zalogowaniu się. Teraz jak sie zaloguje po kliknieciu w wybór vpsa to
-    wywala do userpanelu. A faktycznie powinno zostać w wybranym vps. Rozwiązanie na Stacku
-    "https://stackoverflow.com/questions/806835/django-redirect-to-previous-page-after-login"
     !-Dodać wybór konfiguracji każdego z VPS
+    -Dodać widok wszystkich wirtualek użytkownika w panelu użytkownika
+    -Sprawdzić możliwości Ansible
     -Podpiąc baze danych
     -Zkonteneryzować aplikację i uruchomić na testowym środowisku
     -Zaaplikować UI/UX ? Automatyzację commitowania zmian poprzez githuba.
