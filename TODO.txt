@@ -5,6 +5,6 @@ TODO
     -Sprawdzić możliwości Ansible
     -Podpiąc baze danych
     -Zkonteneryzować aplikację i uruchomić na testowym środowisku
-    -Zaaplikować UI/UX ? Automatyzację commitowania zmian poprzez githuba.
+    -Zaaplikować CI/CD czyli Automatyzację wdrażąnia zmian po pyknięciu merga czy tam rebasa jakiegoś na githubie (koniecznie dalej tworzyc w innym branchu)
     Na dwa tygodnie zapomnieć o JavaScripcie a potem ruszamy z tematem
     -Dodać tematyczny block title do każdej ze stron
